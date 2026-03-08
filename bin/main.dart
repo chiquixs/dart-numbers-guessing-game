@@ -21,7 +21,9 @@ void main() {
     } else if (guess < randomNum) {
       print("Terlalu kecil!\n");
     } else {
+      int score = (maxAttempts - attempts + 1) * 10;
       print("Tebakan benar! Kamu menebak dalam $attempts percobaan!");
+      print("Score kamu : $score");
       break;
     }
 
